@@ -12,10 +12,8 @@ export default function Article({ articleObj }) {
           alt="User"
         />
         <div>
-          <span className='articleAuthor'>{author} · </span><span className='articleDate'>{date}</span>
-          
+          <span className='articleAuthor'>{author} · </span><span className='articleDate'>{date}</span> 
           </div>
-          
       </div>
       <div className='articleContent'>
         <div className='userContent'>

@@ -6,22 +6,22 @@ import Discover from "./discover";
 
 const picksData = [
   {
-    picksImage: "./image.JPG",
-    picksAuthor: "Tristan One",
-    picksTopic: "Rock n Heavy",
-    picksTitle: "Looking at a Familiar Place From a New Angle",
+    picksImage: "https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg",
+    picksAuthor: "Isaac",
+    picksTopic: "Cutting-Edge Innovations",
+    picksTitle: "Revolutionizing Industries: Tech Advancements",
   },
   {
-    picksImage: "./image.JPG",
-    picksAuthor: "Tristan One",
-    picksTopic: "Rock n Heavy",
-    picksTitle: "Looking at a Familiar Place From a New Angle",
+    picksImage: "https://www.allkpop.com/upload/2024/01/content/100912/web_data/allkpop_1704896426_20240110-seulgi.jpg",
+    picksAuthor: "Irene",
+    picksTopic: "Immersive Technologies",
+    picksTitle: "Journey into Virtual Realms: A Technological Odyssey",
   },
   {
-    picksImage: "./image.JPG",
-    picksAuthor: "Tristan One",
-    picksTopic: "Rock n Heavy",
-    picksTitle: "Looking at a Familiar Place From a New Angle",
+    picksImage: "https://kpopping.com/documents/74/1/231129-SEVENTEEN-Joshua-MAMA-Awards-2023-documents-1.jpeg?v=81950",
+    picksAuthor: "Joshua",
+    picksTopic: "Futuristic Marvels",
+    picksTitle: "Tech Wonders: Bridging the Present and the Future",
   },
 ];
 
@@ -40,9 +40,7 @@ export default function Sidebar() {
       </div>
       <Discover />
       <RecommendedTopics />
-      
       <FollowList />
-      
       <div className="readingList">
       <span className="readingTitle">Reading List</span>
       <p>
