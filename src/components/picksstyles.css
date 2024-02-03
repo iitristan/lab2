@@ -1,0 +1,45 @@
+.picksContainer{
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.picksContainer a{
+    text-decoration: none;
+    color: #418a40;
+    font-weight: 500;
+}
+
+.picksInfo{
+    display: flex;
+    align-items: center;  
+    margin-top: 10px;
+}
+
+.picksImage{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.picksAuthor{
+    font-weight: 500;
+    color: #242424;
+}
+
+.picksTopic{
+    font-weight: 500;
+    color: #242424;
+}
+
+
+.picksTitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: #242424;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}

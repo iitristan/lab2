@@ -1,23 +1,24 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.css'; 
+import Header from './components/header';
+import ArticleMain from './components/ArticleMain';
+import Sidebar from './components/sidebar';
+import RecommendedTopics from './components/RecommendedTopics';
 
 function App() {
+  const profileImageSrc = './image.JPG'
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header profileImage={profileImageSrc} />
+      <div className='mainContainer'>
+      <div className="articleContainer">
+      <ArticleMain />
+      </div>
+      <div className="sidebarContainer">
+      <Sidebar />
+      </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,51 @@
+.topicsContainer li {
+    border: 1px solid #F2F2F2;
+    border-radius: 33px;
+    font-size: 16px;
+    background-color: #F2F2F2;
+    padding: 10px 20px;
+    display: flex;
+    margin-right: 10px;
+    width: fit-content;     
+    display: inline-block;
+    margin: 5px;
+}
+
+.fullContainer{
+  margin-left: 4%;
+}
+
+.topicsContainer{
+  margin-top: 32px;
+}
+
+.topicsContainer a{
+  text-decoration: none;
+  color: #418a40;
+  font-weight: 500
+}
+
+.readingList a{
+  text-decoration: none;
+  color: #8d8d8d;
+  font-weight: 400;
+  margin: 2px;
+}
+
+.readingList{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.readingList p{
+  font-size: 18px;
+  margin-top: 10px;
+  color: #8d8d8d;
+  font-weight: 500;
+}
+
+.readingList .readingTitle{
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+}

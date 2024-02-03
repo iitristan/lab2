@@ -1,0 +1,82 @@
+.articleBox {
+  border-bottom: 1px solid #D9DDDC;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userInformation {
+  display: flex;
+  align-items: center;
+}
+
+.userInformation img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.userContent {
+  font-display: flex;
+  align-content: flex-start;
+  text-align: left;
+  width: 70%; /* Adjust the width of userContent */
+  margin: auto; /* Center userContent horizontally */
+}
+
+.articleAuthor {
+  font-weight: 500;
+}
+
+.articleDate {
+  font-size: 14px;
+  color: #6B6B6B;
+}
+
+.articleContent{
+  display: grid;
+ align-items: center; 
+ grid-template-columns: 10fr 5fr;
+}
+
+.userContent{
+  width: 100%
+}
+
+.articleImageStyle {
+  margin-top: 10px; /* Add margin to separate userContent and articleImage */
+  display: flex;
+  justify-content: center; /* Center the articleImage horizontally */
+}
+
+.articleImage {
+  height: auto;
+  max-width: 40%; /* Ensure the image doesn't exceed its container's width */
+}
+
+.topicContainer {
+  border: 1px solid #F2F2F2;
+  border-radius: 33px;
+  font-size: 14px;
+  background-color: #F2F2F2;
+  padding: 3px 10px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.articleDuration{
+  font-size: 14px;
+  color: #6B6B6B;
+}
+
+.articleFooter{
+  width: auto;
+  justify-content: left; 
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
