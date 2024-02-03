@@ -17,14 +17,23 @@ export default function Header({ profileImage }) {
       }}
     >
       <div style={{ display: "flex", alignItems: "center" }}>
-        <h1 style={{ fontSize: "24px", fontWeight: "bold", margin: "0" }}>
-          Medium
-        </h1>
-        <input
-          type="text"
-          placeholder="Search"
-          style={{ marginLeft: "10px", padding: "5px", borderRadius: "5px" }}
-        />
+      <img src='./Medium.SVG' alt="Medium" style={{width: '42px', height: '42px', objectFit: 'cover', margin: '0'}} /> 
+      <input
+  type="text"
+  placeholder="Search"
+  className="searchBar"
+  style={{
+    border: '1px solid #F2F2F2',
+    borderRadius: '33px',
+    fontSize: '16px',
+    backgroundColor: '#F2F2F2',
+    padding: '10px 20px',
+    display: 'flex',
+    marginRight: '10px',
+    marginLeft: '10px',
+  }}
+/>
+
       </div>
       <div style={{ display: "flex", alignItems: "center" }}>
         <HiOutlinePencilAlt />
