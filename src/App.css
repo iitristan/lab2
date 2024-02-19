@@ -1,12 +1,44 @@
+
+
 .mainContainer{
   margin-left: 5%;
   display: flex;
+  
 }
 
 .sidebarContainer {
-
   width: 350px;
   border: solid #D9DDDC;
   border-width: 0 0 0 1px;
   padding: 0 0 0 20px;
+}
+
+:root {
+  /* Default theme (light mode) */
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--header-bg-color); /* Use the variable */
 }

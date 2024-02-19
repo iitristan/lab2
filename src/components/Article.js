@@ -1,10 +1,19 @@
 import React from 'react';
 import './articlestyles.css';
+import { useTheme } from './ThemeContext';
+import styled from 'styled-components';
+
 
 export default function Article({ articleObj }) {
   const { author, date, title, randomLine, userImage, articleImage, articleTopic, readDuration } = articleObj;
+  const ThemedComponent = styled.div`
+  background-color: ${({ theme }) => theme === 'dark' ? '#121212' : '#FFFFFF'};
+  color: ${({ theme }) => theme === 'dark' ? '#FFFFFF' : '#000000'};
+`;
+const { theme } = useTheme();
 
   return (
+    <ThemedComponent theme={theme}>
     <div className='articleBox'>
       <div className='userInformation'>
         <img
@@ -33,5 +42,6 @@ export default function Article({ articleObj }) {
         <span className='articleDuration'>{readDuration}</span>
         </div>
     </div>
+    </ThemedComponent>
   );
 }

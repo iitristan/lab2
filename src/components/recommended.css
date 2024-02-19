@@ -9,6 +9,12 @@
     width: fit-content;     
     display: inline-block;
     margin: 5px;
+    cursor: pointer;
+}
+
+.topicsContainer li:hover {
+  border: 1px solid #cfcfcf;
+  background-color: #cfcfcf;
 }
 
 .fullContainer{
@@ -24,6 +30,8 @@
   color: #000000;
   font-weight: 600;
 }
+
+
 
 .topicsContainer a{
   text-decoration: none;

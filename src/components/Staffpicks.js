@@ -1,5 +1,6 @@
 import React from "react";
 import "./picksstyles.css";
+import { useTheme } from './ThemeContext';
 
 export default function StaffPicks({ picksObj }) {
   const { picksImage, picksAuthor, picksTopic, picksTitle } = picksObj;
@@ -11,10 +12,10 @@ export default function StaffPicks({ picksObj }) {
         <span>
           <span className="picksAuthor">{picksAuthor}</span>
           {" in "}
-          <span className="picksTopic">{picksTopic}</span>
+          <span  className="picksTopic">{picksTopic}</span>
         </span>
       </div>
-      <span className="picksTitle">{picksTitle}</span>
+      <span  className="picksTitle">{picksTitle}</span>
     </div>
   );
 }

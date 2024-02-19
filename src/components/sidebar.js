@@ -3,6 +3,8 @@ import StaffPicks from "./Staffpicks";
 import RecommendedTopics from "./RecommendedTopics";
 import FollowList from "./FollowList";
 import Discover from "./discover";
+import { useTheme } from './ThemeContext';
+import styled from 'styled-components';
 
 const picksData = [
   {
@@ -27,7 +29,15 @@ const picksData = [
 
 export default function Sidebar() {
   const picks = picksData;
+  const ThemedComponent = styled.div`
+  background-color: ${({ theme }) => theme === 'dark' ? '#121212' : '#FFFFFF'};
+  color: ${({ theme }) => theme === 'dark' ? '#FFFFFF' : '#000000'};
+`;
+  const { theme } = useTheme();
+
   return (
+    
+<ThemedComponent theme={theme}>
     <div className="fullContainer">
       <div className="picksContainer">
         <h3>Staff Picks</h3>
@@ -51,5 +61,6 @@ export default function Sidebar() {
 
       </div>
     </div>
+    </ThemedComponent>
   );
 }

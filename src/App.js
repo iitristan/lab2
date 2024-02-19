@@ -4,13 +4,15 @@ import Header from './components/header';
 import ArticleMain from './components/ArticleMain';
 import Sidebar from './components/sidebar';
 import RecommendedTopics from './components/RecommendedTopics';
+import { ThemeProvider } from './components/ThemeContext';
 
 function App() {
   const profileImageSrc = './image.JPG'
 
   return (
+    <ThemeProvider>
     <div className="App">
-      <Header profileImage={profileImageSrc} />
+      <Header profileImage={profileImageSrc}/>
       <div className='mainContainer'>
       <div className="articleContainer">
       <ArticleMain />
@@ -20,6 +22,7 @@ function App() {
       </div>
       </div>
     </div>
+    </ ThemeProvider>
   );
 }
 
