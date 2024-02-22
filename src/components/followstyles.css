@@ -1,67 +1,87 @@
-.followContainer{
-    display: flex;
-    flex-direction: row ;
-    align-items: flex-start;
+.light .follow-list-user,
+.light .follow-list-description {
+  color: #242424; /* Dark text for light background */
 }
 
-.followInfo{
-    display: flex;
-    flex-direction: column ;
-    margin-right: 40px;
-    margin-left: 16px;
-    width: 100%;
+.light .followButton {
+  background-color: #f0f0f0; /* Light background for button */
+  color: #000; /* Dark text */
 }
 
-.follow-list-image{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+/* Dark mode styles */
+.dark .follow-list-user,
+.dark .follow-list-description {
+  color: #ffffff; /* Light text for dark background */
 }
 
-.follow-list-user{
-    font-weight: 700;
-    color: #242424;
-    font-size: 16px;
+.dark .followButton {
+  background-color: #333; /* Dark background for button */
+  color: #fff; /* Light text */
 }
 
-.follow-list-description{
-    font-weight: 500;
-    font-size: 12px;
-    color: #74706B;
+.followContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
-.followList{
-    margin-top: 10%;
+.followInfo {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  margin-left: 16px;
+  width: 100%;
 }
 
-.fButton{
-    margin-right: 10%;
+.follow-list-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.follow-list-user {
+  font-weight: 700;
+  color: #242424;
+  font-size: 16px;
+}
+
+.follow-list-description {
+  font-weight: 500;
+  font-size: 12px;
+  color: #74706b;
+}
+
+.followList {
+  margin-top: 10%;
+}
+
+.fButton {
+  margin-right: 20%;
 }
 
 .followButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #242424;
-    border-radius: 33px;
-    font-size: 14px;
-    padding: 5px 20px;
-    margin: 5px;
-    text-decoration: none;
-    color: #242424;
-    font-weight: 500;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #242424;
+  border-radius: 33px;
+  font-size: 14px;
+  padding: 5px 15px;
+  margin: 5px;
+  text-decoration: none;
+  color: #242424;
+  font-weight: 500;
+  cursor: pointer;
+}
 
-  }
-  
-  .followButton:hover {
-    background-color: #242424;
-    color: #ffffff;
-  }
+.followButton:hover {
+  background-color: #242424;
+  color: #ffffff;
+}
 
-  .seeMore a{
-        text-decoration: none;
-        color: #418a40;
-        font-weight: 500
-  }
+.seeMore a {
+  text-decoration: none;
+  color: #418a40;
+  font-weight: 500;
+}

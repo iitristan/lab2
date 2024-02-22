@@ -1,15 +1,28 @@
+/* Base styles for .topicsContainer, ul, li, a remain unchanged */
+
+/* Light mode styles */
+.light .recommendedTitle {
+  color: #242424; /* Dark text color for light mode */
+}
+
+/* Dark mode styles */
+.dark .recommendedTitle {
+  color: #ffffff; /* Light text color for dark mode */
+}
+
 .topicsContainer li {
-    border: 1px solid #F2F2F2;
-    border-radius: 33px;
-    font-size: 16px;
-    background-color: #F2F2F2;
-    padding: 10px 20px;
-    display: flex;
-    margin-right: 10px;
-    width: fit-content;     
-    display: inline-block;
-    margin: 5px;
-    cursor: pointer;
+  border: 1px solid #6b6b6b;
+  border-radius: 33px;
+  font-size: 16px;
+  background-color: #6b6b6b;
+  padding: 10px 20px;
+  display: flex;
+  margin-right: 10px;
+  width: fit-content;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
 }
 
 .topicsContainer li:hover {
@@ -17,49 +30,54 @@
   background-color: #cfcfcf;
 }
 
-.fullContainer{
+.fullContainer {
   margin-left: 4%;
 }
 
-.topicsContainer{
+.topicsContainer {
   margin-top: 32px;
 }
 
-.topicsContainer p{
+.topicsContainer p {
   font-size: 20px;
-  color: #000000;
   font-weight: 600;
 }
 
-
-
-.topicsContainer a{
+.topicsContainer a {
   text-decoration: none;
   color: #418a40;
-  font-weight: 500
+  font-weight: 500;
 }
 
-.readingList a{
+.readingList a {
   text-decoration: none;
   color: #8d8d8d;
   font-weight: 400;
   margin: 2px;
 }
 
-.readingList{
+.readingList {
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
-.readingList p{
+.readingList p {
   font-size: 18px;
   margin-top: 10px;
   color: #8d8d8d;
   font-weight: 500;
 }
 
-.readingList .readingTitle{
+.readingList .readingTitle {
   font-size: 20px;
-  color: #000000;
   font-weight: 600;
+}
+
+.light .readingTitle {
+  color: #242424; /* Dark text for light mode */
+}
+
+/* Dark mode styles */
+.dark .readingTitle {
+  color: #ffffff; /* Light text for dark mode */
 }

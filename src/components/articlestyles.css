@@ -1,5 +1,5 @@
 .articleBox {
-  border-bottom: 1px solid #D9DDDC;
+  border-bottom: 1px solid #d9dddc;
   padding: 10px;
   margin-bottom: 20px;
   margin-right: 40px;
@@ -26,7 +26,7 @@
   font-display: flex;
   align-content: flex-start;
   text-align: left;
-  width: 70%; 
+  width: 70%;
   margin: auto;
 }
 
@@ -36,17 +36,17 @@
 
 .articleDate {
   font-size: 14px;
-  color: #6B6B6B;
+  color: #6b6b6b;
 }
 
-.articleContent{
+.articleContent {
   display: grid;
- align-items: center; 
- grid-template-columns: 10fr 5fr;
+  align-items: center;
+  grid-template-columns: 10fr 5fr;
 }
 
-.userContent{
-  width: 100%
+.userContent {
+  width: 100%;
 }
 
 .articleImageStyle {
@@ -61,23 +61,25 @@
 }
 
 .topicContainer {
-  border: 1px solid #F2F2F2;
+  border: 1px solid #6b6b6b;
   border-radius: 33px;
   font-size: 14px;
-  background-color: #F2F2F2;
+  background-color: #6b6b6b;
   padding: 3px 10px;
   display: flex;
   margin-right: 10px;
+  color: white;
+  align-items: center;
 }
 
-.articleDuration{
+.articleDuration {
   font-size: 14px;
-  color: #6B6B6B;
+  color: #6b6b6b;
 }
 
-.articleFooter{
+.articleFooter {
   width: auto;
-  justify-content: left; 
+  justify-content: left;
   display: flex;
   align-items: center;
   margin-bottom: 10px;

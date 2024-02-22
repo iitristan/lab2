@@ -1,46 +1,64 @@
-.picksContainer{
-    flex-direction: column;
-    margin-bottom: 24px;
+/* Light mode styles */
+.light .picksAuthor,
+.light .picksTopic,
+.light .picksTitle {
+  color: #242424; /* Dark text for light background */
 }
 
-.picksContainer a{
-    text-decoration: none;
-    color: #418a40;
-    font-weight: 500;
+/* Dark mode styles */
+.dark .picksAuthor,
+.dark .picksTopic,
+.dark .picksTitle {
+  color: #ffffff; /* Light text for dark background */
 }
 
-.picksInfo{
-    display: flex;
-    align-items: center;  
-    margin-top: 10px;
+/* You can add more customizations for dark mode below */
+.dark .picksContainer {
+  background-color: #333; /* Example background color for dark mode */
 }
 
-.picksImage{
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    margin-right: 10px;
-    object-fit: cover;
+.picksContainer {
+  flex-direction: column;
+  margin-bottom: 24px;
 }
 
-.picksAuthor{
-    font-weight: 500;
-    color: #242424;
+.picksContainer a {
+  text-decoration: none;
+  color: #418a40;
+  font-weight: 500;
 }
 
-.picksTopic{
-    font-weight: 500;
-    color: #242424;
+.picksInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
-
-.picksTitle{
-    font-size: 20px;
-    font-weight: 600;
-    color: #242424;
+.picksImage {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
 }
 
-ul{
-    list-style-type: none;
-    padding: 0;
+.picksAuthor {
+  font-weight: 500;
+  color: #242424;
+}
+
+.picksTopic {
+  font-weight: 500;
+  color: #242424;
+}
+
+.picksTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #242424;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }

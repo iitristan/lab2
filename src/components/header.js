@@ -1,18 +1,17 @@
 import React from "react";
 import { HiOutlinePencilAlt } from "react-icons/hi";
 import { FaBell } from "react-icons/fa";
-import { useTheme } from './ThemeContext';
+import { useTheme } from "./ThemeContext";
 import "./header.css";
-import styled from 'styled-components';
+import styled from "styled-components";
 
-
-
-export default function Header({ profileImage}) {
+export default function Header({ profileImage }) {
   const ThemedComponent = styled.div`
-  background-color: ${({ theme }) => theme === 'dark' ? '#121212' : '#FFFFFF'};
-  color: ${({ theme }) => theme === 'dark' ? '#FFFFFF' : '#000000'};
-`;
-const { toggleTheme, theme } = useTheme();
+    background-color: ${({ theme }) =>
+      theme === "dark" ? "#121212" : "#FFFFFF"};
+    color: ${({ theme }) => (theme === "dark" ? "#FFFFFF" : "#000000")};
+  `;
+  const { toggleTheme, theme } = useTheme();
 
   const articleData = [
     {
@@ -95,66 +94,79 @@ const { toggleTheme, theme } = useTheme();
 
   return (
     <ThemedComponent theme={theme}>
-    <header
-      className="header"
-      style={{
-        backgroundColor: "#FFFF",
-        padding: "20px",
-        color: "#000",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        borderBottom: "1px solid #D9DDDC",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center" }}>
-      <img src='./Medium.SVG' alt="Medium" style={{width: '42px', height: '42px', objectFit: 'cover', margin: '0'}} /> 
-      <input
-  type="text"
-  placeholder="Search"
-  className="searchBar"
-  list="article-titles"
-  style={{
-    border: '1px solid #F2F2F2',
-    borderRadius: '33px',
-    fontSize: '16px',
-    backgroundColor: '#F2F2F2',
-    padding: '10px 20px',
-    display: 'flex',
-    marginRight: '10px',
-    marginLeft: '10px',
-  }}
-  
-/>
+      <header
+        className="header"
+        style={{
+          backgroundColor: "#FFFF",
+          padding: "20px",
+          color: "#000",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          borderBottom: "1px solid #D9DDDC",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img
+            src="./Medium.png"
+            alt="Medium"
+            style={{
+              width: "42px",
+              height: "42px",
+              objectFit: "cover",
+              margin: "0",
+            }}
+          />
+          <input
+            type="text"
+            placeholder="Search"
+            className="searchBar"
+            list="article-titles"
+            style={{
+              border: "1px solid #F2F2F2",
+              borderRadius: "33px",
+              fontSize: "16px",
+              backgroundColor: "#F2F2F2",
+              padding: "10px 20px",
+              display: "flex",
+              marginRight: "10px",
+              marginLeft: "10px",
+            }}
+          />
 
-<datalist id="article-titles">
-  {articleData.map((article, index) => (
-    <option key={index} value={article.title} />
-  ))}
-</datalist>
-
-      </div>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        
-        <HiOutlinePencilAlt style={{ marginRight: "4px", cursor:"pointer" }}/>
-        <span style={{ marginRight: "15px", cursor:"pointer" }}>Write</span>
-        <FaBell style={{ marginRight: "20px", cursor: "pointer" }} />
-        <label className="theme-switch" htmlFor="checkbox">
-        <input type="checkbox" id="checkbox" onChange={toggleTheme} checked={theme === 'dark'} />
-        <div className="slider round"></div>
-      </label>
-        <img
-          src={profileImage}
-          alt="Profile"
-          style={{
-            width: "40px",
-            height: "40px",
-            borderRadius: "50%",
-            objectFit: "cover",
-          }}
-        />
-      </div>
-    </header>
+          <datalist id="article-titles">
+            {articleData.map((article, index) => (
+              <option key={index} value={article.title} />
+            ))}
+          </datalist>
+        </div>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <HiOutlinePencilAlt
+            style={{ marginRight: "4px", cursor: "pointer" }}
+          />
+          <span style={{ marginRight: "15px", cursor: "pointer" }}>Write</span>
+          <FaBell style={{ marginRight: "20px", cursor: "pointer" }} />
+          <label className="theme-switch" htmlFor="checkbox">
+            <input
+              type="checkbox"
+              id="checkbox"
+              onChange={toggleTheme}
+              checked={theme === "dark"}
+            />
+            <div className="slider round"></div>
+          </label>
+          <img
+            src={profileImage}
+            alt="Profile"
+            style={{
+              width: "40px",
+              height: "40px",
+              borderRadius: "50%",
+              objectFit: "cover",
+            }}
+          />
+        </div>
+      </header>
     </ThemedComponent>
   );
 }
